@@ -24,11 +24,6 @@ const routes = [
 			component: 'todo-view', 
 			action: async () => { await import ('./views/todo/todo-view'); }
 		},
-		{
-         path: 'chart',
-         component: 'chart-view',
-         action: async () => { await import ('./views/chart/chart-view'); }
-        },
  		// for server-side, the next magic line sends all unmatched routes:
 		...serverSideRoutes // IMPORTANT: this must be the last entry in the array
 	]

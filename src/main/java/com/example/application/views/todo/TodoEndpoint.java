@@ -11,17 +11,17 @@ import com.vaadin.flow.server.connect.auth.AnonymousAllowed;
 @AnonymousAllowed
 public class TodoEndpoint {
 
-  private TodoRepo repo;
+    private TodoRepo repo;
 
-  public TodoEndpoint(TodoRepo repo) {
-    this.repo = repo;
-  }
+    public TodoEndpoint(TodoRepo repo) {
+        this.repo = repo;
+    }
 
-  public List<Todo> getTodos() {
-    return repo.findAll();
-  }
+    public List<Todo> getTodos() {
+        return repo.findAll();
+    }
 
-  public Todo saveTodo(Todo todo) {
-    return repo.save(todo);
-  }
+    public Todo saveTodo(Todo todo) {
+        return repo.save(todo);
+    }
 }

@@ -19,7 +19,7 @@ export class MainView extends LitElement {
   @property({ type: Object }) location = router.location;
 
   @property({ type: Array }) menuTabs: MenuTab[] = [
-    {route: 'todo', name: 'Todo'},{route: 'chart', name: 'Chart'}
+    {route: 'todo', name: 'Todo'},{route: 'chart-view', name: 'Chart'}
   ];
 
   @property({ type: String }) projectName = '';

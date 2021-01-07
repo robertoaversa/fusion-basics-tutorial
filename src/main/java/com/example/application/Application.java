@@ -1,5 +1,6 @@
 package com.example.application;
 
+import com.example.application.service.CovidService;
 import com.vaadin.flow.component.page.AppShellConfigurator;
 import com.vaadin.flow.server.PWA;
 
@@ -34,6 +35,10 @@ public class Application extends SpringBootServletInitializer implements AppShel
         factory.setConnectTimeout(3000);
         factory.setReadTimeout(3000);
         return new RestTemplate(factory);
+    }
+    @Bean
+    public CovidService covidService(){
+        return new CovidService();
     }
 
 }
